@@ -18,8 +18,4 @@ Now you want to scroll to this item... we have 2 options:
 
 As the name shows, a smooth scrolling animation provides is nice to look at and keeps us in the context. We visually see how we got to that item. But what if the list is long? It will scroll at a constant pace, through all the items in between, with a full render of each. This can get into a long and annoyng wait:
 
-![smoothScrollToPosition demo](https://miro.medium.com/max/1600/1*Gvgtvd6wJqRFxbA_q0iZYQ.gif)
-
-[![smoothScrollToPosition demo](https://miro.medium.com/max/1600/1*Gvgtvd6wJqRFxbA_q0iZYQ.gif)](http://www.youtube.com/watch?v=6UlZDAXGqo4 "Long Wait for smoothScrollToPosition()")
-
-<iframe  title="YouTube video player" width="480" height="390" src="http://www.youtube.com/watch?v=6UlZDAXGqo4?autoplay=1" frameborder="0" allowfullscreen></iframe>
+[![smoothScrollToPosition demo](https://raw.githubusercontent.com/rumburake/rumburake/main/smoothScrollToPosition.gif)](http://www.youtube.com/watch?v=6UlZDAXGqo4 "Long Wait for smoothScrollToPosition()")
