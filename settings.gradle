@@ -1,0 +1,3 @@
+include ':FastSmoothScroll'
+include ':app'
+rootProject.name = "FastSmoothScroll"

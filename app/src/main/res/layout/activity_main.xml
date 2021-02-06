@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".ExampleActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonRandom"
+        tools:listitem="@layout/crap_layout"
+        android:background="@color/purple_200"
+        />
+
+    <Button
+        android:id="@+id/buttonRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="RANDOM scrollToPosition()"
+        android:textAllCaps="false"
+        android:minHeight="0dp"
+        />
+    <Button
+        android:id="@+id/buttonRandomSmooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="RANDOM smoothScrollToPosition()"
+        android:textAllCaps="false"
+        android:minHeight="0dp"
+        />
+    <Button
+        android:id="@+id/buttonRandomFS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="RANDOM fastSmoothScrollToPosition()"
+        android:textAllCaps="false"
+        android:minHeight="0dp"
+        />
+
+</LinearLayout>
