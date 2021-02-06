@@ -1,16 +1,16 @@
 # FastSmoothScroll
 `fastSmoothScrollToPosition(int position)` extension for RecycleView
 
-Suppose you have a list with many items. You are using `RecyclerView`. The app wants to select a certain item and also scroll to it to show it to you.
+Suppose you have a list with many items. The app wants to select a certain item and also scroll to it to show it to you.
 
 The item change would look like this:
 
+[RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview) is the standard tool for showing collections of data on the screen in Android, and [nofifyItemChanged](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter#notifyItemChanged(int)) is one of the optimisations that make it performance efficient and visually appealing. Let's see how well it works with scrolling...
+
 ```
-// tell the adapter that the item changed, and it (but nothing else) needs to be redrawn if on screen
+// tell the adapter that the item changed, and it (but nothing else) needs to be redrawn if it is on screen
 recyclerView.adapter.notifyItemChanged(position)
 ```
-
-[RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview) is the standard tool for showing collections of data on the screen in Android, and [nofifyItemChanged](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter#notifyItemChanged(int)) is one of the optimisations that make it performance efficient and visually appealing. Let's see how well it works with scrolling...
 
 Now you want to scroll to this item... we have 2 options:
 
