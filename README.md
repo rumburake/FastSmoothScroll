@@ -22,6 +22,8 @@ But what if the list is long? It will scroll at a constant pace, through all the
 
 ![smoothScrollToPosition demo](https://raw.githubusercontent.com/rumburake/rumburake/main/smoothScrollToPosition.gif)
 
+This behaviour was described in the [StylingAndroid Blog](https://blog.stylingandroid.com/scrolling-recyclerview-part-1/) since 2015.
+
 ## [scrollToPosition](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView#scrollToPosition(int))?
 
 Unhappy with the long wait, we could give up the whole idea of animation. Just snap us to the item, a frame change should we quick, right?
