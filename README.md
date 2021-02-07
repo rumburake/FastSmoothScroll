@@ -33,7 +33,34 @@ But no, it looks like any `scrollToPosition()` made after `notifyItemChanged()` 
 ## fastSmoothScrollToPosition - what we really want
 
 This new function offers a reasonable UX alternative to `scrollToPosition` and `smoothScrollToPosition`. It has some smoothness, and it doesn't take forever. The logic is:
- - if we are far away from the desired position, jump closer, within a few screen's coverage
+ - if we are far away from the desired position, jump closer, within a few screens' coverage
  - then do a smooth scroll until we reach the position
  
 ![fastSmoothScrollToPosition demo](https://raw.githubusercontent.com/rumburake/rumburake/main/fastSmoothScrollToPosition.gif)
+
+### Installation
+
+Just click the badge for instructions: [![](https://jitpack.io/v/rumburake/FastSmoothScroll.svg)](https://jitpack.io/#rumburake/FastSmoothScroll)
+
+### Usage and Options
+
+Just call the function directly on your `RecyclerView`. That's it. It supports `LinearLayout` and `GridLayout`:
+
+```
+recyclerView.fastSmoothScrollToPosition(newPosition)
+```
+
+### Options
+
+You can change the number of screens we consider in proximity. It is a float. Default is `3.0`. Less than 3 screens distance may be not enough to wear off the nasty sideeffect of `scrollToPosition`. More screens is fine, but then the wait gets longer.
+
+```
+FastSmoothScroll.bufferScreens = 4.5
+```
+
+You can enable logging and change the `Log` TAG if you want. Should not make any difference in performance.
+
+```
+FastSmoothScroll.logging = true
+FastSmoothScroll.logTag = "FSS"
+```
