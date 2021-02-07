@@ -16,7 +16,7 @@ Let's see how well it works with scrolling... we have 2 options:
 
 ## [smoothScrollToPosition](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView#smoothScrollToPosition(int))?
 
-As the name shows, a smooth scrolling animation provides is nice to look at and keeps us in the context. We visually see how we got to that item.
+As the name shows, a smooth scrolling animation is nice to look at and keeps us in the context. We visually see how we got to that item.
 
 But what if the list is long? It will scroll at a constant pace, through all the items in between, with a full render of each. This can get into a long and annoyng wait:
 
@@ -44,15 +44,17 @@ Just click the badge for instructions: [![](https://jitpack.io/v/rumburake/FastS
 
 ### Usage and Options
 
-Just call the function directly on your `RecyclerView`. That's it. It supports `LinearLayout` and `GridLayout`:
+Just call the function directly on your `RecyclerView`. That's it.
 
 ```
 recyclerView.fastSmoothScrollToPosition(newPosition)
 ```
 
+This extension supports any `RecyclerView` backed by a `LinearLayoutManager` or `GridLayoutManager`:
+
 ### Options
 
-You can change the number of screens we consider in proximity. It is a float. Default is `3.0`. Less than 3 screens distance may be not enough to wear off the nasty sideeffect of `scrollToPosition`. More screens is fine, but then the wait gets longer.
+You can change the number of screens we consider in proximity. It is a float. Default is `3.0`. Less than 3 screens distance may be not enough to wear off the nasty side-effect seen with `scrollToPosition`. More screens are fine, but then the wait gets longer.
 
 ```
 FastSmoothScroll.bufferScreens = 4.5
