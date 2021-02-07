@@ -3,9 +3,9 @@
 
 Suppose you have a list with many items. The app wants to select a certain item and also scroll to it to show it to you.
 
-The item change would look like this:
-
 [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview) is the standard tool for showing collections of data on the screen in Android, and [nofifyItemChanged](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter#notifyItemChanged(int)) is one of the optimisations that make it performance efficient and visually appealing.
+
+The item change would look like this:
 
 ```
 // tell the adapter that the item changed, and it (but nothing else) needs to be redrawn if it is on screen
