@@ -30,6 +30,8 @@ But no, it looks like any `scrollToPosition()` made after `notifyItemChanged()` 
 
 ![scrollToPosition demo](https://raw.githubusercontent.com/rumburake/rumburake/main/scrollToPosition.gif)
 
+This is a [RecyclerView Bug](https://issuetracker.google.com/issues/128940095) logged in March 2019.
+
 ## fastSmoothScrollToPosition - what we really want
 
 This new function offers a reasonable UX alternative to `scrollToPosition` and `smoothScrollToPosition`. It has some smoothness, and it doesn't take forever. The logic is:
