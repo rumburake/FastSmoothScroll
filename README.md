@@ -1,4 +1,4 @@
-# FastSmoothScroll
+# FastSmoothScroll [![JitPack](https://jitpack.io/v/rumburake/FastSmoothScroll.svg)](https://jitpack.io/#rumburake/FastSmoothScroll)
 `fastSmoothScrollToPosition(int position)` extension for RecycleView
 
 Suppose you have a list with many items. The app wants to select a certain item and also scroll to it to show it to you.
@@ -40,7 +40,7 @@ This new function offers a reasonable UX alternative to `scrollToPosition` and `
 
 ### Installation
 
-Just click the badge for instructions: [![](https://jitpack.io/v/rumburake/FastSmoothScroll.svg)](https://jitpack.io/#rumburake/FastSmoothScroll)
+Just click the badge for instructions: [![JitPack](https://jitpack.io/v/rumburake/FastSmoothScroll.svg)](https://jitpack.io/#rumburake/FastSmoothScroll)
 
 ### Usage and Options
 
